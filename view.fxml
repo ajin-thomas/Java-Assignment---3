@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Controller"
+      spacing="10"
+      alignment="CENTER">
+
+    <Label text="JavaFX Application" style="-fx-font-size: 18pt;" />
+
+    <Label text="Enter two numbers:" />
+    <TextField fx:id="num1TextField" promptText="Number 1" />
+    <TextField fx:id="num2TextField" promptText="Number 2" />
+
+    <Button text="Calculate" onAction="#calculate" />
+
+    <Label fx:id="resultLabel" />
+
+</VBox>
